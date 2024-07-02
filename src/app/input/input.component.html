@@ -1,4 +1,7 @@
-<form class="inputBar">
-  <input *ngFor="let letter of wordArr; let i = index"/>
+<div class="inputContainer" #inputContainer>
+  <form class="inputBar">
+    <input #wordInput *ngFor="let letter of wordArr; let i = index" maxlength="1" [id]="i" (click)="focusInput()" (keydown)="onInput($event)"/>
+  </form>
+  <button>Guess</button>
+</div>
 
-</form>

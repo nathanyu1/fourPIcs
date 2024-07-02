@@ -1,3 +1,28 @@
 footer {
   background-color: #50577A;
+  text-align: center;
+  color: white;
 }
+
+.main {
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.footerContent {
+  padding-top: 18px;
+}
+
+.linkContainer {
+  display: flex;
+  justify-content: center;
+  .github {
+    img {
+      height: 25px;
+      width: auto;
+    }
+  }
+}
+
+
