@@ -1,7 +1,8 @@
 <div class="inputContainer" #inputContainer>
   <form class="inputBar">
-    <input #wordInput *ngFor="let letter of wordArr; let i = index" maxlength="1" [id]="i" (click)="focusInput()" (keydown)="onInput($event)"/>
+    <input #wordInput *ngFor="let letter of wordArr; let i = index" maxlength="1" [id]="i" (click)="focusInput()"
+    (keydown)="onInput($event)" [@wrongAnswer]="inputInvalid" [@jump]="jumpState"/>
   </form>
-  <button>Guess</button>
+  <button class="guessButton" [disabled]="!isFull" (click)="onSubmit()">Guess</button>
 </div>
 

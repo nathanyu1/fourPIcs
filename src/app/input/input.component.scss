@@ -5,7 +5,9 @@
   input {
     width: 40px;
     height: 40px;
-    font-size: 20px;
+    font-size: 24px;
+    font-family: 'Sen';
+    font-weight: bold;
     border: 3px solid #474E68;
     border-radius: 7px;
     text-align: center;
@@ -19,10 +21,23 @@
   align-items: center;
   padding-bottom: 20px;
 
-  button {
-    width: 150px;
+  .guessButton {
+    width: 120px;
     height: 35px;
     border-radius: 8px;
+    margin-top: 16px;
+    font-size: 22px;
+    color: white;
+    background-color: #50577A;
+    border-color: #50577A;
+    border-style: solid;
+
+    &:disabled {
+      background-color: #474E68;
+      color: grey;
+      border-color: #474E68;
+      border-style: solid;
+    }
   }
 }
 
